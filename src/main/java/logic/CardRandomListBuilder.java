@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 
 /**
  * Created by xlo on 16-1-15.
- * it's the card list builder
+ * it's the card random list builder
  */
 public class CardRandomListBuilder {
 
@@ -17,7 +17,7 @@ public class CardRandomListBuilder {
         this.random = random;
     }
 
-    public List<Card> getCardList(Card[] cards) {
+    public List<Card> buildCardRandomList(Card[] cards) {
         List<CardNode> cardNodes = new ArrayList<>();
         for (Card now : cards) {
             cardNodes.add(new CardNode(now, random.nextInt()));

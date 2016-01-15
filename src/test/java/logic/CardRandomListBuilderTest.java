@@ -26,7 +26,7 @@ public class CardRandomListBuilderTest {
         cards[1] = new Card(2);
         cards[2] = new Card(3);
 
-        List<Card> result = cardRandomListBuilder.getCardList(cards);
+        List<Card> result = cardRandomListBuilder.buildCardRandomList(cards);
         assertEquals(3, result.get(0).getCost());
         assertEquals(2, result.get(1).getCost());
         assertEquals(1, result.get(2).getCost());
@@ -43,7 +43,7 @@ public class CardRandomListBuilderTest {
         cards[1] = new Card(2);
         cards[2] = new Card(3);
 
-        List<Card> result = cardRandomListBuilder.getCardList(cards);
+        List<Card> result = cardRandomListBuilder.buildCardRandomList(cards);
         assertEquals(1, result.get(0).getCost());
         assertEquals(3, result.get(1).getCost());
         assertEquals(2, result.get(2).getCost());
