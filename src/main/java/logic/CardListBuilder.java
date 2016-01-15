@@ -8,7 +8,15 @@ import java.security.InvalidParameterException;
  */
 public class CardListBuilder {
 
-    public Card[] buildCardList(int[] cardCosts, int other) {
+    private int[] cardCosts;
+    private int other;
+
+    public CardListBuilder(int[] cardCosts, int other) {
+        this.cardCosts = cardCosts;
+        this.other = other;
+    }
+
+    public Card[] buildCardList() {
         checkParamValid(cardCosts, other);
         Card[] cards = buildCardsArray(cardCosts, other);
         int pos = 0;
