@@ -1,4 +1,4 @@
-package logic;
+package card;
 
 import org.junit.Test;
 

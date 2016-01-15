@@ -1,4 +1,4 @@
-package logic;
+package card;
 
 /**
  * Created by xlo on 16-1-15.
